@@ -1,0 +1,148 @@
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size:1.6rem;    /*10px baz alinarak belirtilen oranla buyultulur*/
+    line-height: 1.5;
+    text-align: center;
+    background-color: aliceblue;
+}
+a{
+    text-decoration: none;
+}
+p{
+    padding: 1.6rem;
+}
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+    
+}
+
+/*header*/
+header{
+    height: 45rem;
+    
+}
+header .bg-image{
+    position: absolute; /*akıştan çıktığı için yazılar imagein üstüne gelir.*/
+    background-image: url(img/6.jpeg);    /*arka planı resim yapma*/
+    background-size: cover;
+    background-position: center;
+    height: 45rem;
+    width: 100%;
+    opacity: 0.4;
+    z-index: -1;
+    
+}
+header h1{
+    padding: 1.1rem;
+    padding-bottom: 0;
+}
+header img{
+    border-radius: 50%;
+    padding: 0.8rem;
+    width: 27.5rem;
+    height: 25rem;
+}
+
+.btn{
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #666;
+    padding: 1.6rem 3.2rem;  /*32 px sağdan ve soldan 16 px alttan ve üsten*/
+    margin: .5rem 0;
+    transition: all 0.3s; /*geçişlerdeki bekleme süresi*/
+}
+.btn:hover{ /*üstüne gelindiğinde*/
+    background-color: #eaea;
+    color: #333;
+    
+}
+
+/*section-a*/
+#section-a{
+    background-color:#eaeaea;
+    color: #333;
+    text-align: center;
+    padding: 3.2rem 0;
+    
+}
+
+/*section-b*/
+
+#section-b{
+    padding: 2rem;
+    background-color: black;
+    
+    
+}
+#section-b img{
+    width: 100%;
+    height: auto;
+}
+section-b ul{
+    list-style: none;
+    
+}
+#section-b li{
+    background: #fff;
+    color: #333;
+    margin-bottom: 1.5rem;
+    
+}
+.col-content{
+    padding: 1.5rem;
+}
+
+
+/*section-c*/
+
+/*#section-c{
+    padding: 2rem;
+    background-color: black;
+}*/
+#section-c .box{
+    padding: 5rem;
+    color: white;
+}
+section-c .icons{
+    padding: 2.5rem;
+    
+}
+
+#section-c .box:first-child{
+    background-color: #2690d4;
+    
+}
+/*footer*/
+
+footer{
+    padding: 4rem;
+    background: #000;
+    color: white;
+    
+}
+
+@media screen and (min-width:961px){
+    #section-b li{
+        width: 40%;
+        margin: 1%;
+        display:inline-block;
+        
+        
+    }
+    html{
+        font-size: 10px;
+    }
+    
+}
+}
